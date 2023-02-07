@@ -1,0 +1,144 @@
+// Main Styles
+$main-color : rgb(29, 32, 37);
+$secondary-color: #FE7D49;
+$dark: #343A40;
+$gold: #f1c40f;
+$blue: #002248;
+$gray: #E9ECEF;
+$pink: #fab1a0;
+$brown: #C17D11;
+body{
+	//overflow-x: hidden;
+}
+section, footer, #upperbar, #lowerbar{
+	width:100%;
+}
+nav{
+	width:100%;
+}
+*{
+	&:focus{
+		outline: 0 !important;
+	}
+}
+a{
+	color: inherit;
+	&:hover{
+		text-decoration: none;
+		color: inherit;
+	}
+}
+.carousel{
+	height:100%;
+	width:100%;
+	.carousel-inner{
+		height:100%;
+		width:100%;
+		.carousel-item{
+			height:100%;
+			width:100%;
+		}
+	}
+}
+.overlay{
+	position:relative;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background-color: rgba(0,0,0,.6);
+}
+.ar-font{
+	//font-family: 'Cairo', sans-serif;
+}
+.pdf-downloader{
+	width: 100%;
+	a{
+		width:300px;
+		height:100px;
+		background-color: $brown;
+		border: 1px solid $brown;
+		color: #FFF;
+		font-size: 1.5rem;
+		border-radius: 5px;
+		transition: all .5s ease;
+		&:hover{
+			background-color: #FFF;
+			color: $brown;
+		}
+	}
+}
+@mixin image-settings ($size, $position){
+	background:{
+		size: $size;
+		position: $position;
+		repeat: no-repeat;
+	}
+}
+@mixin overlay ($op) {
+	position:relative;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:{
+		color: rgba(0,0,0,$op);
+	}
+}
+@mixin image-def ($name) {
+	background:{
+		image: url('../imgs/#{$name}');
+	}
+}
+
+// Single Styles
+
+// header
+#header{
+	height: 46px;
+	ul{
+		height:100%;
+	}
+}
+
+// navbar
+#nav{
+	.uk-logo{
+		img{
+			max-width:50px;
+		}
+	}
+	.uk-navbar-nav{
+		a{
+			// font-family: 'Cairo', sans-serif !important;
+		}
+	}
+}
+
+// medical devices
+#medical-devices, #medical-devices-accessories{
+	.uk-card-media-top{
+		div{
+			@include image-settings (cover, center);
+			height:400px;
+		}
+	}
+}
+
+// footer
+#footer{
+	ul{
+		li a, li{
+			color: #AAA;
+			&:hover{
+				color: #FFF;
+			}
+		}
+	}
+}
+
+// lowerbar
+#lowerbar{
+	background-color: #111;
+	height:56px;
+}

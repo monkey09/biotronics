@@ -1,0 +1,90 @@
+section, footer, #upperbar, #lowerbar {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+}
+.carousel .carousel-inner {
+  height: 100%;
+  width: 100%;
+}
+.carousel .carousel-inner .carousel-item {
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.pdf-downloader {
+  width: 100%;
+}
+.pdf-downloader a {
+  width: 300px;
+  height: 100px;
+  background-color: #C17D11;
+  border: 1px solid #C17D11;
+  color: #FFF;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.pdf-downloader a:hover {
+  background-color: #FFF;
+  color: #C17D11;
+}
+
+#header {
+  height: 46px;
+}
+#header ul {
+  height: 100%;
+}
+
+#nav .uk-logo img {
+  max-width: 50px;
+}
+#medical-devices .uk-card-media-top div, #medical-devices-accessories .uk-card-media-top div {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+#footer ul li a, #footer ul li {
+  color: #AAA;
+}
+#footer ul li a:hover, #footer ul li:hover {
+  color: #FFF;
+}
+
+#lowerbar {
+  background-color: #111;
+  height: 56px;
+}
+
+/*# sourceMappingURL=style.css.map */
